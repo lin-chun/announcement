@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/spectrum.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico"/>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/spectrum.js"></script>
+    <script src="js/index.js"></script>
+    <title>银行一账通公告生成页工具</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="title">银行一账通公告生成页工具</h1>
+        <div id="qrcode"></div>
+        <div class="contentWrap">
+            <div class="left">
+                <div class="start">
+                    <p>抬头:</p>
+                    <input type="text" id="startContent" placeholder="">
+                    <button class="clean-btn">×</button>
+                </div>
+                <div class="theContent">
+                    <p>正文:</p>
+                    <textarea name="" id="myContent" cols="30" rows="10"></textarea>
+                </div>
+                <div class="writeBank">
+                    <p>银行:</p>
+                    <input type="text" id="bankContent">
+                    <button class="clean-btn">×</button>
+                </div>
+                <div class="writeDate">
+                    <p>日期:</p>
+                    <input type="text" id="dateContent">
+                    <button class="clean-btn">×</button>
+                </div>
+                <div class="fontColor">
+                    <span>选择文字颜色</span>
+                    <input type="text" id="myFontColor">
+                    <span class="bgText">选择背景颜色</span>
+                    <input type="text" id="myBgColor">
+                </div>
+                <div class="fontSize">
+                    <span>选择字体大小</span>
+                    <div class="selectFont">
+                        <div id="myFontSize">17px</div>
+                        <ul class="fontSizeList hide">
+                            <li>12px</li>
+                            <li>13px</li>
+                            <li>14px</li>
+                            <li>15px</li>
+                            <li>16px</li>
+                            <li>17px</li>
+                            <li>18px</li>
+                            <li>19px</li>
+                            <li>20px</li>
+                            <li>21px</li>
+                        </ul>
+                        <div class="oldFontSize" style="display:none;">0.5333rem</div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="gradient">
+                    <input type="checkbox" name="checkColor" id="checkColor">
+                    <label for="checkColor" class="checkFont">是否渐变</label>
+                </div>
+                <div class="backgroundColor">
+                    <span>头色</span>
+                    <input type="text" id="startColor">
+                    <span class="endSpan">尾色</span>
+                    <input type="text" id="endColor">
+                </div>
+                <div class="storageText" style="display:none"></div>
+            </div>
+            <div class="right">
+                <div class="buttonWrap">
+                    <!--<div class="qrDownload">生成二维码</div>-->
+                    <!-- <div class="button">下载HTML文件</div> -->
+                </div>
+                <section class="main">
+                    <div class="close"></div>
+                    <p id="rightStart"></p>
+                    <p id="rightContent"></p>
+                    <p id="rightBank"></p>
+                    <p id="rightDate"></p>
+                </section>
+                <form action="http://www.pinganh5.com/getAnnouncement_upload" method="POST" enctype="multipart/form-data" class="myImg">
+                    <div class="uploadWrap">
+                        <div class="uploadImg">上传背景图片</div>
+                        <div class="imgName">注：背景图片需包含背景与公告内容，图片大小需小于80kb，尺寸640*1136(最小高度1136)&nbsp;&nbsp;<span class="showImgName"></span></div>
+                    </div>
+                    <input id="test-image-file" type="file" name="bgImg">
+                    <input type="" name="gradient" value="true" style="display:none;">
+                    <input type="" name="headColor" value="" style="display:none;">
+                    <input type="" name="footColor" value="" style="display:none;">
+                    <input type="" name="headContent" id="startPut" value="" style="display:none;">
+                    <input type="" name="mainContent" id="headPut" value="" style="display:none;">
+                    <input type="" name="bankName" id="bankPut" value="紫金农商银行" style="display:none;">
+                    <input type="" name="time" id="timePut" value="2016年11月18日" style="display:none;">
+                    <input type="" name="fontColor" value="" style="display:none;">
+                    <input type="" name="fontSize" id="sizePut" value="" style="display:none;">
+                    <input type="submit" class="button" d="sub-btn" name="submit" value="下载HTML文件">
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+
+</html>

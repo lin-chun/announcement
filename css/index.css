@@ -1,0 +1,634 @@
+/*通用样式 start*/
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+}
+
+fieldset,
+img {
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    color: #333;
+    font: 12px/20px "SimSun", "宋体", "Arial Narrow", HELVETICA;
+    background: #f7f7f7;
+    /* overflow-y:scroll;*/
+    overflow-x: hidden;
+}
+
+a {
+    color: #999999;
+    text-decoration: none;
+}
+
+
+/*通用样式-end*/
+
+.wrap {
+    width: 778px;
+    height: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 44px 90px 0 90px;
+    -webkit-box-shadow: 0 0 10px rgba(232, 232, 232, .9);
+    -moz-box-shadow: 0 0 10px rgba(232, 232, 232, .9);
+    box-shadow: 0 0 10px rgba(232, 232, 232, .9);
+    position: relative;
+}
+
+#qrcode {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 455px;
+    top: 174px;
+    /*background:#f00;*/
+    display: none;
+}
+
+.title {
+    font-size: 16px;
+    color: #333333;
+}
+
+.contentWrap {
+    padding-top: 44px;
+    position: relative;
+}
+
+
+/*左边输入部分*/
+
+.left {
+    position: absolute;
+    left: -20px;
+    top: 44px;
+    /*background:-webkit-linear-gradient(top,#f00,#000);*/
+}
+
+
+/*输入开始 satrt*/
+
+.start {
+    width: 351px;
+    height: 38px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.start p {
+    width: 37px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#startContent {
+    float: left;
+    margin-left: 20px;
+    padding: 0 14px 0 12px;
+    width: 266px;
+    height: 36px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.clean-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 26px;
+    font-weight: lighter;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clean-btn:hover {
+    color: #F96437;
+}
+
+
+/*输入结束 end*/
+
+
+/*输入正文 start*/
+
+.theContent {
+    height: 223px;
+    margin-bottom: 25px;
+}
+
+.theContent p {
+    width: 37px;
+    height: 223px;
+    float: left;
+    font-size: 14px;
+    color: #333333;
+}
+
+#myContent {
+    float: left;
+    margin-left: 20px;
+    padding: 6px 12px 0;
+    line-height: 21px;
+    max-width: 268px;
+    min-width: 268px;
+    max-height: 216px;
+    min-height: 216px;
+    border: 1px solid #dddddd;
+    overflow: scroll;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/*输入正文end*/
+
+
+/*输入结尾 start*/
+
+.end {
+    height: 38px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.end p {
+    width: 37px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#endContent {
+    margin-left: 20px;
+    float: left;
+    padding: 0 14px 0 12px;
+    width: 266px;
+    height: 36px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/*输入结尾 end*/
+
+
+/*输入银行 start*/
+
+.writeBank {
+    height: 38px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.writeBank p {
+    width: 37px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#bankContent {
+    margin-left: 20px;
+    float: left;
+    padding: 0 14px 0 12px;
+    width: 266px;
+    height: 36px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/*输入银行 end*/
+
+
+/*日期 satrt*/
+
+.writeDate {
+    height: 38px;
+    position: relative;
+}
+
+.writeDate p {
+    width: 37px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    font-size: 14px;
+    color: #333333;
+}
+
+#dateContent {
+    margin-left: 20px;
+    float: left;
+    padding: 0 14px 0 12px;
+    width: 266px;
+    height: 36px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/*日期 end*/
+
+
+/*字体颜色选择 start*/
+
+.fontColor {
+    margin: 30px 0;
+    height: 22px;
+    line-height: 22px;
+}
+
+.fontColor span {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.bgText {
+    margin-left: 20px;
+}
+
+#myFontColor {
+    width: 44px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#myBgColor {
+    width: 44px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*字体颜色选择 end*/
+
+
+/*字体大小选择 start*/
+
+.fontSize {
+    margin: 30px 0;
+    height: 22px;
+    line-height: 22px;
+}
+
+.fontSize span {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 20px;
+    float: left;
+}
+
+.selectFont {
+    float: left;
+    width: 100px;
+    height: 24px;
+    position:relative;
+}
+
+#myFontSize {
+    width: 72px;
+    height: 22px;
+    border: solid 1px #dddddd;
+    padding: 0 14px 0 12px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: BlinkMacSystemFont;
+}
+.arrow{
+    position:absolute;
+    top:8px;
+    right:5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid #ddd;
+    cursor:pointer;
+}
+.arrow:hover{
+    border-top: 9px solid #F96437;
+}
+.fontSizeList{
+    position:absolute;
+    top:26px;
+    left:0;
+    width:100px;
+    height:160px;
+    /*border:1px solid #ddd;*/
+    border-radius: 5px;
+    z-index:100;
+    background:#ddd;
+    cursor: pointer;
+    display: none;
+    font-family: BlinkMacSystemFont;
+}
+.fontSizeList li{
+    width:100%;
+    height:15px;
+    text-align: center;
+    font-size:14px;
+    line-height: 15px;
+    border-bottom: 1px solid #fff;
+    color:#333;
+}
+.fontSizeList li:nth-child(10){
+    border-bottom: none;
+}
+/*字体大小选择 end*/
+
+
+/*是否渐变 start*/
+
+.gradient {
+    height: 22px;
+    margin: 20px 0 30px 0;
+}
+
+#checkColor {
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin: 0;
+}
+
+.checkFont {
+    font-size: 14px;
+    color: #333333;
+    display: block;
+    height: 22px;
+    float: left;
+    line-height: 22px;
+    margin-left: 20px;
+}
+
+
+/*是否渐变 end*/
+
+
+/*背景色选择 start*/
+
+.backgroundColor {
+    height: 20px;
+    line-height: 20px;
+}
+
+.backgroundColor span {
+    font-size: 14px;
+    color: #333333;
+    margin-right: 20px;
+}
+
+.endSpan {
+    margin-left: 20px;
+}
+
+#startColor {
+    width: 44px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    background-color: #0098f3;
+    cursor: pointer;
+}
+
+#endColor {
+    width: 44px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    margin-left: 20px;
+    background-color: #0098f3;
+    cursor: pointer;
+}
+
+
+/*背景色选择 end*/
+
+.right {
+    position: absolute;
+    right: -20px;
+    top: 44px;
+    width: 249px;
+}
+
+
+/*左侧显示区 start*/
+
+.main {
+    width: 224px;
+    height: 368px;
+    background: #0098f3;
+    padding: 68px 17px 0;
+    position: relative;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+}
+
+.close {
+    width: 11px;
+    height: 11px;
+    background: url(../img/close.png) left center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 21px;
+    right: 15px;
+}
+
+.main p {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 900;
+    /*opacity:0;*/
+}
+
+#rightContent {
+    margin-top:17px;
+    text-indent: 34px;
+}
+
+#rightBank {
+    text-align: right;
+}
+
+#rightDate {
+    text-align: right;
+}
+
+.buttonWrap {
+    width: 249px;
+    height: 30px;
+    margin-bottom: 70px;
+}
+
+.button {
+    margin: 0 auto;
+    width: 120px;
+    height: 28px;
+    border: 1px solid #F96437;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    /*line-height: 28px;*/
+    background: #F96437 url(../img/btn.png) left center no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /*float:left;*/
+    outline: none;
+    position:absolute;
+    left:65px;
+    top: 555px;
+}
+.myImg {
+    margin-top: 20px;
+    /*position: relative;*/
+}
+#test-image-file {
+    width: 120px;
+    height: 28px;
+    opacity:0;
+    cursor: pointer;
+    position:absolute;
+    left: 65px;
+    top: 0;
+}
+.uploadWrap {
+    width:249px;
+    height:28px;
+    position: absolute;
+    left:65px;
+    top:0;
+    cursor: pointer;
+}
+.uploadImg {
+    width: 120px;
+    height: 28px;
+    border: 1px solid #F96437;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    background: #F96437 url(../img/btn.png) left center no-repeat;
+    background-size: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /*float:left;*/
+}
+.imgName {
+    width:100%;
+    height:28px;
+    font-size: 14px;
+    /*text-align: center;*/
+    line-height: 20px;
+    /*float:left;*/
+    /*font-weight: 900;*/
+    position:absolute;
+    left: -65px;
+}
+.showImgName {
+    color: red;
+    font-weight: 900;
+}
+#sub-btn {
+    position:absolute;
+    left:0;
+    top:36px;
+}
+.clear {
+    height: 0px;
+    font-size: 0;
+    clear: both;
+}
+.show{
+    display:block;
+}
+.hide{
+    display:none;
+}
